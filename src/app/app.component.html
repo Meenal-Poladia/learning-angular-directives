@@ -44,6 +44,13 @@
       <ng-template [ngIf]="onlyOdd">
         <p>Only odd</p>
       </ng-template>
+      <div [ngSwitch]="value">
+        <p *ngSwitchCase="5">I am number {{value}}</p>
+        <p *ngSwitchCase="10">I am number {{value}}</p>
+        <p *ngSwitchCase="15">I am number {{value}}</p>
+        <p *ngSwitchCase="20">I am number {{value}}</p>
+        <p *ngSwitchDefault>Number is invalid {{value}}</p>
+      </div>
     </div>
   </div>
 </div>
