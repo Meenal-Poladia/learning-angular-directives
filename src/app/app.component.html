@@ -28,7 +28,9 @@
         </div>
       </ul>
       <p appBasicHighlight>Highlight Me with Basic Directive</p>
-      <p appRendererBasicHighlight>Highlight Me with Renderer Directive</p>
+      <p [appRendererBasicHighlight] = "'violet'"
+        defaultColor="aquamarine"
+      >Highlight Me with Renderer Directive</p>
       <ng-template [ngIf]="onlyOdd">
         <p>Only odd</p>
       </ng-template>
