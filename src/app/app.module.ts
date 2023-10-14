@@ -5,11 +5,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import {BasicHighlight} from "./directives/basic-highlight";
+import { RendererBasicHighlightDirective } from './directives/renderer-basic-highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BasicHighlight
+    BasicHighlight,
+    RendererBasicHighlightDirective
   ],
   imports: [
     BrowserModule,
